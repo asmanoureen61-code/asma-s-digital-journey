@@ -25,7 +25,7 @@ export default function Projects() {
           <Reveal
             key={p.title}
             delay={(i % 2) * 0.08}
-            className={i === 0 ? "md:col-span-2" : undefined}
+            className={i === 0 ? "md:col-span-2" : ""}
           >
             <SpotlightCard className="h-full p-4">
               <div
