@@ -1,24 +1,58 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import AnimatedBackground from "@/components/portfolio/AnimatedBackground";
+import CustomCursor from "@/components/portfolio/CustomCursor";
+import Intro from "@/components/portfolio/Intro";
+import Navbar from "@/components/portfolio/Navbar";
+import Hero from "@/components/portfolio/Hero";
+import About from "@/components/portfolio/About";
+import Skills from "@/components/portfolio/Skills";
+import Marquee from "@/components/portfolio/Marquee";
+import Services from "@/components/portfolio/Services";
+import ImpactStats from "@/components/portfolio/ImpactStats";
+import Projects from "@/components/portfolio/Projects";
+import WorkflowSection from "@/components/portfolio/Workflow";
+import Contact from "@/components/portfolio/Contact";
+import Footer from "@/components/portfolio/Footer";
+
+const TITLE = "Asma Noureen — AI Web Developer & Creator";
+const DESCRIPTION =
+  "AI-powered web developer, video creator, and vibe coder transforming ideas into digital experiences that engage, inspire, and grow brands.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: TITLE },
+      { name: "description", content: DESCRIPTION },
+      { property: "og:title", content: TITLE },
+      { property: "og:description", content: DESCRIPTION },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
+  const [, setIntroDone] = useState(false);
+
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="relative text-foreground lg:cursor-none">
+      <AnimatedBackground />
+      <CustomCursor />
+      <Intro onDone={() => setIntroDone(true)} />
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Marquee />
+      <Services />
+      <ImpactStats />
+      <Projects />
+      <WorkflowSection />
+      <Contact />
+      <Footer />
+    </main>
   );
 }
