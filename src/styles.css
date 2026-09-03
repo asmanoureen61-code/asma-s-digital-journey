@@ -179,9 +179,10 @@ body {
 @utility text-gradient {
   background-image: linear-gradient(
     100deg,
-    color-mix(in oklch, var(--electric) 90%, white),
-    var(--primary),
-    var(--accent)
+    color-mix(in oklch, var(--electric) 70%, white) 0%,
+    var(--electric) 35%,
+    color-mix(in oklch, var(--primary) 60%, white) 70%,
+    color-mix(in oklch, var(--accent) 70%, white) 100%
   );
   background-clip: text;
   -webkit-background-clip: text;
