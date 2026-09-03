@@ -64,13 +64,13 @@ export default function AnimatedBackground() {
     <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden bg-background">
       <motion.div
         style={{ x: x1, y: y1, filter: useTransform(hueShift, (h) => `hue-rotate(${h}deg)`) }}
-        className="absolute -top-40 left-0 h-[65vh] w-[65vh] rounded-full bg-primary/25 blur-[120px]"
+        className="absolute -top-40 left-0 h-[55vh] w-[55vh] rounded-full bg-primary/20 opacity-70 blur-[160px]"
       />
       <motion.div
         style={{ x: x2 }}
-        className="absolute top-1/3 right-0 h-[55vh] w-[55vh] rounded-full bg-accent/20 blur-[130px]"
+        className="absolute top-1/3 right-0 h-[50vh] w-[50vh] rounded-full bg-accent/15 opacity-70 blur-[170px]"
       />
-      <div className="absolute bottom-0 left-1/4 h-[45vh] w-[45vh] rounded-full bg-electric/15 blur-[140px]" />
+      <div className="absolute bottom-0 left-1/4 h-[45vh] w-[45vh] rounded-full bg-electric/10 opacity-70 blur-[170px]" />
       <div className="grid-lines absolute inset-0 opacity-[0.5] [mask-image:radial-gradient(ellipse_at_center,black,transparent_78%)]" />
       <canvas ref={canvasRef} className="absolute inset-0" />
       <div

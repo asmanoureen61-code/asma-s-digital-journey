@@ -8,8 +8,8 @@ const TOOLS = [
   { icon: Code2, label: "Lovable", pos: "right-[2%] top-[10%]", delay: 0.4 },
   { icon: Film, label: "Runway", pos: "left-[0%] bottom-[20%]", delay: 0.8 },
   { icon: Palette, label: "Midjourney", pos: "right-[0%] bottom-[16%]", delay: 1.2 },
-  { icon: Wand2, label: "Cursor", pos: "left-[18%] top-[2%]", delay: 1.6 },
-  { icon: Sparkles, label: "Claude", pos: "right-[20%] bottom-[2%]", delay: 2 },
+  { icon: Wand2, label: "Cursor", pos: "left-[6%] top-[-6%]", delay: 1.6 },
+  { icon: Sparkles, label: "Claude", pos: "right-[6%] bottom-[-6%]", delay: 2 },
 ];
 
 const ROLES = ["AI Web Developer", "AI Video Creator", "Vibe Coder", "Digital Creator", "Entrepreneur"];
