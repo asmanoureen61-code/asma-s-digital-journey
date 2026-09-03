@@ -15,9 +15,7 @@ export default function Projects() {
       <Eyebrow>Selected Work</Eyebrow>
       <h2 className="max-w-3xl text-3xl font-bold tracking-tight sm:text-5xl">
         <WordReveal text="Projects that blend " />
-        <span className="text-gradient">
-          <WordReveal text="story, speed and AI." />
-        </span>
+        <WordReveal gradient text="story, speed and AI." />
       </h2>
 
       <div className="mt-14 grid gap-5 md:grid-cols-2">

@@ -15,9 +15,7 @@ export default function About() {
           <Eyebrow>Identity Scan</Eyebrow>
           <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">
             <WordReveal text="A creator who thinks in " />
-            <span className="text-gradient">
-              <WordReveal text="systems, motion & AI." />
-            </span>
+            <WordReveal gradient text="systems, motion & AI." />
           </h2>
           <Reveal delay={0.1} className="mt-6 space-y-4 text-muted-foreground">
             <p>

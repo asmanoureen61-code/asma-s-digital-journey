@@ -30,7 +30,15 @@ export function Eyebrow({ children }: { children: ReactNode }) {
   );
 }
 
-export function WordReveal({ text, className = "" }: { text: string; className?: string }) {
+export function WordReveal({
+  text,
+  className = "",
+  gradient = false,
+}: {
+  text: string;
+  className?: string;
+  gradient?: boolean;
+}) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
   return (
@@ -38,7 +46,7 @@ export function WordReveal({ text, className = "" }: { text: string; className?:
       {text.split(" ").map((word, i) => (
         <span key={`${word}-${i}`} className="inline-block overflow-hidden pb-[0.12em] align-bottom">
           <motion.span
-            className="inline-block"
+            className={gradient ? "text-gradient inline-block" : "inline-block"}
             initial={{ y: "110%", opacity: 0 }}
             animate={inView ? { y: "0%", opacity: 1 } : {}}
             transition={{ duration: 0.85, ease: EASE, delay: i * 0.06 }}

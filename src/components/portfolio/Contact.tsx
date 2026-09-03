@@ -29,9 +29,7 @@ export default function Contact() {
           <Eyebrow>Let&apos;s Build</Eyebrow>
           <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">
             <WordReveal text="Have an idea? Let&apos;s turn it into " />
-            <span className="text-gradient">
-              <WordReveal text="impact." />
-            </span>
+            <WordReveal gradient text="impact." />
           </h2>
           <Reveal delay={0.1} className="mt-6 text-muted-foreground">
             Tell me what you&apos;re building. I reply to every serious project inquiry.

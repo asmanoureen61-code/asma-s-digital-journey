@@ -15,9 +15,7 @@ export default function WorkflowSection() {
       <Eyebrow>The Process</Eyebrow>
       <h2 className="max-w-3xl text-3xl font-bold tracking-tight sm:text-5xl">
         <WordReveal text="From idea to " />
-        <span className="text-gradient">
-          <WordReveal text="impact." />
-        </span>
+        <WordReveal gradient text="impact." />
       </h2>
 
       <div className="relative mt-14">

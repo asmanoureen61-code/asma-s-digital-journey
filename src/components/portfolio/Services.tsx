@@ -19,9 +19,7 @@ export default function Services() {
       <Eyebrow>What I Do</Eyebrow>
       <h2 className="max-w-3xl text-3xl font-bold tracking-tight sm:text-5xl">
         <WordReveal text="Services built for brands that want to " />
-        <span className="text-gradient">
-          <WordReveal text="move faster." />
-        </span>
+        <WordReveal gradient text="move faster." />
       </h2>
 
       <div className="mt-14 grid gap-4 sm:grid-cols-3">

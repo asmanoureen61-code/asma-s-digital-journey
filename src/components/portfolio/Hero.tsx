@@ -41,13 +41,9 @@ export default function Hero() {
 
         <h1 className="mt-7 text-4xl leading-[1.05] font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
           <WordReveal text="I Build" />
-          <span className="text-gradient">
-            <WordReveal text=" Smart Websites" />
-          </span>
+          <WordReveal gradient text=" Smart Websites" />
           <WordReveal text=" & " />
-          <span className="text-gradient">
-            <WordReveal text="AI Experiences" />
-          </span>
+          <WordReveal gradient text="AI Experiences" />
           <WordReveal text=" That Make an Impact." />
         </h1>
 

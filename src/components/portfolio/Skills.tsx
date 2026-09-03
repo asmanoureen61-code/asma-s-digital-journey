@@ -18,9 +18,7 @@ export default function Skills() {
       <Eyebrow>Skill Galaxy</Eyebrow>
       <h2 className="max-w-3xl text-3xl font-bold tracking-tight sm:text-5xl">
         <WordReveal text="Capabilities that connect " />
-        <span className="text-gradient">
-          <WordReveal text="creativity with code." />
-        </span>
+        <WordReveal gradient text="creativity with code." />
       </h2>
 
       <div className="mt-14 grid gap-4 sm:grid-cols-2">

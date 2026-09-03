@@ -64,13 +64,13 @@ export default function AnimatedBackground() {
     <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden bg-background">
       <motion.div
         style={{ x: x1, y: y1, filter: useTransform(hueShift, (h) => `hue-rotate(${h}deg)`) }}
-        className="absolute -top-40 left-0 h-[55vh] w-[55vh] rounded-full bg-primary/20 opacity-70 blur-[160px]"
+        className="absolute -top-40 left-0 h-[80vh] w-[80vh] rounded-full [background:radial-gradient(circle,color-mix(in_oklch,var(--primary)_38%,transparent)_0%,transparent_65%)]"
       />
       <motion.div
         style={{ x: x2 }}
-        className="absolute top-1/3 right-0 h-[50vh] w-[50vh] rounded-full bg-accent/15 opacity-70 blur-[170px]"
+        className="absolute top-1/3 right-0 h-[70vh] w-[70vh] rounded-full [background:radial-gradient(circle,color-mix(in_oklch,var(--accent)_30%,transparent)_0%,transparent_65%)]"
       />
-      <div className="absolute bottom-0 left-1/4 h-[45vh] w-[45vh] rounded-full bg-electric/10 opacity-70 blur-[170px]" />
+      <div className="absolute bottom-0 left-1/4 h-[60vh] w-[60vh] rounded-full [background:radial-gradient(circle,color-mix(in_oklch,var(--electric)_22%,transparent)_0%,transparent_65%)]" />
       <div className="grid-lines absolute inset-0 opacity-[0.5] [mask-image:radial-gradient(ellipse_at_center,black,transparent_78%)]" />
       <canvas ref={canvasRef} className="absolute inset-0" />
       <div
