@@ -166,6 +166,28 @@ export default function Hero() {
           </motion.div>
         </div>
 
+        {/* AI toolkit visual */}
+        <motion.div
+          initial={{ opacity: 0, y: 60, scale: 0.94 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 1, ease: EASE }}
+          className="relative mx-auto mt-20 max-w-4xl"
+        >
+          <div className="pointer-events-none absolute inset-0 -z-10 rounded-[2.5rem] bg-[radial-gradient(closest-side,color-mix(in_oklab,var(--primary)_38%,transparent),transparent)] blur-2xl" />
+          <div className="glass overflow-hidden rounded-[2rem] border border-white/10 p-2">
+            <motion.img
+              src={workstationAsset.url}
+              alt="Laptop workstation surrounded by floating AI tool cards for ChatGPT, Cursor, Lovable, Gemini, Perplexity and Notion"
+              loading="lazy"
+              className="animate-float-slow w-full rounded-[1.6rem]"
+            />
+          </div>
+          <p className="mt-4 text-center font-mono text-[11px] tracking-[0.3em] text-muted-foreground uppercase">
+            I Create With — AI Tools + Motion + Code
+          </p>
+        </motion.div>
+
         <motion.a
           href="#about"
           initial={{ opacity: 0 }}
