@@ -19,7 +19,7 @@ const TOOLS = [
   { icon: Bot, label: "ChatGPT", pos: "right-[6%] top-[6%]", tint: "from-electric/40 to-primary/30", delay: 0.8 },
   { icon: Sparkle, label: "Gemini", pos: "right-[-3%] top-[38%]", tint: "from-electric/40 to-accent/30", delay: 1.1 },
   { icon: Snowflake, label: "Perplexity", pos: "left-[2%] bottom-[24%]", tint: "from-electric/40 to-primary/20", delay: 1.4 },
-  { icon: StickyNote, label: "Notion", pos: "right-[2%] bottom-[8%]", tint: "from-white/20 to-white/5", delay: 1.7 },
+  { icon: StickyNote, label: "Notion", pos: "right-[4%] bottom-[22%]", tint: "from-white/20 to-white/5", delay: 1.3 },
 ];
 
 const CODE_LINES = [
