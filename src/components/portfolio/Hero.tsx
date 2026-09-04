@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import { ArrowDown, Bot, Code2, Film, Palette, Sparkles, Wand2 } from "lucide-react";
 import { EASE, WordReveal } from "./primitives";
-import workstationAsset from "@/assets/ai-workstation.png.asset.json";
+
 
 const TOOLS = [
   { icon: Bot, label: "ChatGPT", pos: "left-[2%] top-[16%]", delay: 0 },
